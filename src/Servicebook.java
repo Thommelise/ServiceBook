@@ -51,5 +51,10 @@ public class Servicebook {
         return false;
     }
 
+    public Service getMostRecent(){
+       Service mostRecentService = services.get(0);
+       for (Service service:services);
+       if
+    }
 
 }

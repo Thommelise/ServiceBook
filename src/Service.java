@@ -42,5 +42,13 @@ public class Service {
                 '}';
     }
 
+    public boolean isMoreRecent(Service service){
+
+        if (this.date.getYear()>service.getDate().getYear()){
+            return true;
+        }
+        return false;
+    }
+
 }
 
