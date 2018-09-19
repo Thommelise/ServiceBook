@@ -2,15 +2,16 @@ import java.util.Objects;
 
 public class Service {
 
-    private int mileage;
-    private Date date;
+    int mileage;
+    Date date;
 
     public Service(int mileage,Date date){
         this.mileage = mileage;
         this.date = date;
     }
 
-    public Date getDate() {
+    public Date getDate()
+    {
         return date;
     }
 

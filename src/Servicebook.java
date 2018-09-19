@@ -1,12 +1,15 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Servicebook {
+
+
 //making an Arraylist objekt
+public class Servicebook {
+
    List<Service> services = new ArrayList<>();
 // adding service to the list of services
 
-   public void addservice(Service service){
+   public void addService(Service service){
       services.add(service);
    }
    public int getNumberOfServices() {
@@ -22,18 +25,31 @@ public class Servicebook {
       return null;
    }
 
-   public List<Service> getAllServices(Service mileage) {
+   public List<Service> getAllServices(Service service) {
       return services;
    }
+    public int[] getAllServiceMileage(){
 
-   public int getAllServiceMilage () {
+        int [] mileages = new int[services.size()];
+        int i =0;
 
+        for(Service service: services){
+            mileages[i]=service.getMileage();
+            i++;
+        }
+        return mileages;
+    }
 
+    public boolean hasServiceOnDate(Date date){
 
+        for (Service service : services) {
+            if (date.equals(service.getDate())){
+                return true;
+            }
 
-   }
-
-   public Date hasServiceOnDate()
+        }
+        return false;
+    }
 
 
 }
