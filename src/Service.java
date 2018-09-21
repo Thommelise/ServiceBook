@@ -5,18 +5,16 @@ public class Service {
     int mileage;
     Date date;
 
-    public Service(int mileage,Date date){
+    public Service(int mileage, Date date) {
         this.mileage = mileage;
         this.date = date;
     }
 
-    public Date getDate()
-    {
+    public Date getDate() {
         return date;
     }
 
-    public int getMileage()
-    {
+    public int getMileage() {
         return mileage;
     }
 
@@ -42,13 +40,19 @@ public class Service {
                 '}';
     }
 
-    public boolean isMoreRecent(Service service){
+    public boolean isMoreRecent(Service service) {
 
-        if (this.date.getYear()>service.getDate().getYear()){
+        if (this.date.getYear() > service.getDate().getYear()) {
+            return true;
+        }
+        if (this.date.getMonth() > service.getDate().getMonth()) {
+            return true;
+        }
+
+        if (this.date.getDay() > service.getDate().getDay()) {
             return true;
         }
         return false;
     }
-
 }
 
