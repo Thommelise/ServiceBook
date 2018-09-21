@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 
 //making an Arraylist objekt
@@ -63,5 +64,23 @@ public class Servicebook {
         return mostRecentService;
     }
 
-    
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Servicebook that = (Servicebook) o;
+        return Objects.equals(services, that.services);
+    }
+
+    @Override
+    public int hashCode() {
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Servicebook{" +
+                "services=" + services +
+                '}';
+    }
 }
