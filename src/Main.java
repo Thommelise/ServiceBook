@@ -138,9 +138,14 @@ public class Main extends Application {
 
 
                     output.appendText(serviceBook.toString() + "\n");
+                    output.appendText(service.toString()+"\n");
+
+
 
                 } catch (Exception e) {
                     System.err.println("Caught Exception:" + e.getMessage());
+                    output.appendText( "Caught Exception:"+ " "+e.getMessage());
+                    output.setStyle("-fx-text-fill: red;");
                 }
             }
 
