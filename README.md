@@ -62,6 +62,17 @@ Denne metode tilføjer en service til services og returnere ikke noget.
 
 Pakker i java er en gruppe af sammenhørende klasser. Man opdeler pakker herakisk i kataloger.
 
+Klasser er blueprint/template som man kan danne objekter ud fra. Klassen beskriver variabler og metoder der beskriver objekternes opførsel.
+
+Objekter er en instans af klassen. 
+
+Referrence, det er jo noget af det fucking vigtigste :D 
+
+ Text scenetitle = new Text("Pick Colour");
+  
+scenetitle er en referrence til det nye Text objektet. 
+	
+	
 
 
 
