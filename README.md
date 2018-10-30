@@ -23,6 +23,7 @@ De tekst baserede primitive typer byte and char, disse typer holder på karakter
 Den tredje er boolean og null primitiver. 
 
 Accessor består både af en getter og setter, man bruger getter når man skal have fat i felt værdien af en type.
+
  public int getDay() {
         return day;
     }
@@ -30,13 +31,16 @@ Her har vi lavet vores egen metode, en accessor metode der retunere en int som h
 
 
 En setter bruges til at sætte værdien for en type
+
  public void setYear(int year) {
         this.year = year;
     }
 Her setter vi year til at være en int og at den ikke skal retunere noget.
 	
 Metode signatur fortæller os hvilken metode der bruges og der er mange forskellige metoder.
+
 public int getDay()
+
 dette er signaturen for en accessor også kaldet getter.
 
 En retur type også kaldet metodes overskrift ( method header). 
