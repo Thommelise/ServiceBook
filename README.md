@@ -22,7 +22,40 @@ Der findes de numeriske typer disse typer holder kun på numerisk data. De numer
 De tekst baserede primitive typer byte and char, disse typer holder på karakterer.
 Den tredje er boolean og null primitiver. 
 
-Accessors:      
+Accessor består både af en getter og setter, man bruger getter når man skal have fat i felt værdien af en type.
+ public int getDay() {
+        return day;
+    }
+Her har vi lavet vores egen metode, en accessor metode der retunere en int som hedder day.
+
+
+En setter bruges til at sætte værdien for en type
+ public void setYear(int year) {
+        this.year = year;
+    }
+Her setter vi year til at være en int og at den ikke skal retunere noget.
+	
+Metode signatur fortæller os hvilken metode der bruges og der er mange forskellige metoder.
+public int getDay()
+dette er signaturen for en accessor også kaldet getter.
+
+En retur type også kaldet metodes overskrift ( method header). 
+Når man har en metode som skal returnere f.eks. en int. 
+skal retur typen være den samme som den der returneres.
+
+    public int getNumberOfServices() {
+        return services.size();
+    }
+Her er retur typen int og den returnere størrelsen på services, hvilket er en int.
+
+Hvis metoden ikke skal returnere noget benytter man void. 
+
+public void addService(Service service) {
+        services.add(service);
+    } 
+Denne metode tilføjer en service til services og returnere ikke noget.
+
+    
 
 
 
