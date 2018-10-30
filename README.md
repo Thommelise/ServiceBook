@@ -70,7 +70,7 @@ Referrence, det er jo noget af det fucking vigtigste :D
 
  Text scenetitle = new Text("Pick Colour");
   
-scenetitle er en referrence til det nye Text objektet. 
+Text er data typen, scenetitle er en referrence til det nye Text("Pick Colour") objektet.  
 	
 	
 
