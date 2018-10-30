@@ -57,9 +57,12 @@ Hvis metoden ikke skal returnere noget benytter man void.
 public void addService(Service service) {
         services.add(service);
     } 
+    
 Denne metode tilføjer en service til services og returnere ikke noget.
 
-    
+Pakker i java er en gruppe af sammenhørende klasser. Man opdeler pakker herakisk i kataloger.
+
+
 
 
 
