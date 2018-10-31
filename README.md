@@ -35,11 +35,12 @@ En setter bruges til at sætte værdien for en type
  public void setYear(int year) {
         this.year = year;
     }
+    
 Her setter vi year til at være en int og at den ikke skal retunere noget.
 	
 Metode signatur fortæller os hvilken metode der bruges og der er mange forskellige metoder.
 
-public int getDay()
+public int getDay()´{}
 
 dette er signaturen for en accessor også kaldet getter.
 
