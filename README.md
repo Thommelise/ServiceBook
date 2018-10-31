@@ -27,6 +27,7 @@ Accessor består både af en getter og setter, man bruger getter når man skal h
  public int getDay() {
         return day;
     }
+
 Her har vi lavet vores egen metode, en accessor metode der retunere en int som hedder day.
 
 
